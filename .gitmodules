@@ -1,0 +1,45 @@
+[submodule "src/github.com/ccding/go-config-reader"]
+	path = src/github.com/ccding/go-config-reader
+	url = http://github.com/ccding/go-config-reader
+[submodule "src/github.com/ccding/go-logging"]
+	path = src/github.com/ccding/go-logging
+	url = http://github.com/ccding/go-logging
+[submodule "src/github.com/cloudfoundry/go_cfmessagebus"]
+	path = src/github.com/cloudfoundry/go_cfmessagebus
+	url = http://github.com/cloudfoundry/go_cfmessagebus
+[submodule "src/github.com/cloudfoundry/hm9000"]
+	path = src/github.com/cloudfoundry/hm9000
+	url = http://github.com/cloudfoundry/hm9000
+[submodule "src/github.com/cloudfoundry/yagnats"]
+	path = src/github.com/cloudfoundry/yagnats
+	url = http://github.com/cloudfoundry/yagnats
+[submodule "src/github.com/codegangsta/cli"]
+	path = src/github.com/codegangsta/cli
+	url = http://github.com/codegangsta/cli
+[submodule "src/github.com/coreos/etcd"]
+	path = src/github.com/coreos/etcd
+	url = http://github.com/coreos/etcd
+[submodule "src/github.com/coreos/go-etcd"]
+	path = src/github.com/coreos/go-etcd
+	url = http://github.com/coreos/go-etcd
+[submodule "src/github.com/coreos/go-log"]
+	path = src/github.com/coreos/go-log
+	url = http://github.com/coreos/go-log
+[submodule "src/github.com/coreos/go-raft"]
+	path = src/github.com/coreos/go-raft
+	url = http://github.com/coreos/go-raft
+[submodule "src/github.com/coreos/go-systemd"]
+	path = src/github.com/coreos/go-systemd
+	url = http://github.com/coreos/go-systemd
+[submodule "src/github.com/nu7hatch/gouuid"]
+	path = src/github.com/nu7hatch/gouuid
+	url = http://github.com/nu7hatch/gouuid
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = http://github.com/onsi/ginkgo
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = http://github.com/onsi/gomega
+[submodule "src/github.com/samuel/go-zookeeper"]
+	path = src/github.com/samuel/go-zookeeper
+	url = http://github.com/samuel/go-zookeeper
