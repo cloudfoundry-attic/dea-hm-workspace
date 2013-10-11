@@ -43,3 +43,6 @@
 [submodule "src/github.com/samuel/go-zookeeper"]
 	path = src/github.com/samuel/go-zookeeper
 	url = http://github.com/samuel/go-zookeeper
+[submodule "src/github.com/cloudfoundry/loggregatorlib"]
+	path = src/github.com/cloudfoundry/loggregatorlib
+	url = https://github.com/cloudfoundry/loggregatorlib
