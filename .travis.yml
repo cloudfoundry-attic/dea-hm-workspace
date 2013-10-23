@@ -32,6 +32,4 @@ script:
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
   - export PATH=$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
   - cd $GOPATH/src/github.com/cloudfoundry/hm9000
-  - ginkgo -r -i --randomizeAllSpecs --failOnPending --skip="MCAT"
-  - ginkgo -r -i --randomizeAllSpecs --failOnPending --focus="MCAT ETCD MD Suite"
-  - ginkgo -r -i --randomizeAllSpecs --failOnPending --focus="MCAT ZooKeeper MD Suite"
+  - ginkgo -r -i --randomizeAllSpecs --failOnPending --skipMeasurements
