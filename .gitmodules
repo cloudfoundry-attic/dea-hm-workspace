@@ -49,3 +49,6 @@
 [submodule "src/github.com/cloudfoundry/gosteno"]
 	path = src/github.com/cloudfoundry/gosteno
 	url = https://github.com/cloudfoundry/gosteno
+[submodule "src/github.com/vito/cmdtest"]
+	path = src/github.com/vito/cmdtest
+	url = https://github.com/vito/cmdtest
