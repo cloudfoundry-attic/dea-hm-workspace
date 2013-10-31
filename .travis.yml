@@ -26,10 +26,17 @@ install:
   - curl -C - http://apache.osuosl.org/zookeeper/zookeeper-3.4.5/zookeeper-3.4.5.tar.gz | tar -zx
   - mv $HOME/bin/zookeeper-3.4.5 $HOME/bin/zookeeper
   - chmod a+x $HOME/bin/zookeeper/bin/zkServer.sh
+  - curl -C - http://apache.osuosl.org/cassandra/2.0.2/apache-cassandra-2.0.2-bin.tar.gz | tar -zx
+  - mv $HOME/bin/apache-cassandra-2.0.2 $HOME/bin/cassandra
+  - chmod a+x $HOME/bin/cassandra/bin/cassandra
+  - mkdir -p /var/log/cassandra
+  - chown -R `whoami` /var/log/cassandra
+  - mkdir -p /var/lib/cassandra
+  - chown -R `whoami` /var/lib/cassandra
   - popd
 
 script:
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
-  - export PATH=$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
+  - export PATH=$HOME/bin/cassandra/bin:$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
   - cd $GOPATH/src/github.com/cloudfoundry/hm9000
   - ginkgo -r -i --randomizeAllSpecs --failOnPending --skipMeasurements

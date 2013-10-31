@@ -52,3 +52,6 @@
 [submodule "src/github.com/vito/cmdtest"]
 	path = src/github.com/vito/cmdtest
 	url = https://github.com/vito/cmdtest
+[submodule "src/tux21b.org/v1/gocql"]
+	path = src/tux21b.org/v1/gocql
+	url = https://github.com/tux21b/gocql
