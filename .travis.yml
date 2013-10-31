@@ -33,11 +33,9 @@ install:
   - sudo chown -R `whoami` /var/log/cassandra
   - sudo mkdir -p /var/lib/cassandra
   - sudo chown -R `whoami` /var/lib/cassandra
-  - echo `whoami`
   - popd
 
 script:
-  - echo `whoami`
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
   - export PATH=$HOME/bin/cassandra/bin:$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
   - cd $GOPATH/src/github.com/cloudfoundry/hm9000
