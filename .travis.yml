@@ -29,11 +29,15 @@ install:
   - curl -C - http://apache.osuosl.org/cassandra/2.0.2/apache-cassandra-2.0.2-bin.tar.gz | tar -zx
   - mv $HOME/bin/apache-cassandra-2.0.2 $HOME/bin/cassandra
   - chmod a+x $HOME/bin/cassandra/bin/cassandra
-  - mkdir -p /var/log/cassandra
-  - mkdir -p /var/lib/cassandra
+  - sudo mkdir -p /var/log/cassandra
+  - sudo chown -R `whoami` /var/log/cassandra
+  - sudo mkdir -p /var/lib/cassandra
+  - sudo chown -R `whoami` /var/lib/cassandra
+  - echo `whoami`
   - popd
 
 script:
+  - echo `whoami`
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
   - export PATH=$HOME/bin/cassandra/bin:$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
   - cd $GOPATH/src/github.com/cloudfoundry/hm9000
