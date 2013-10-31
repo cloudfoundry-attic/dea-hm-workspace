@@ -30,9 +30,7 @@ install:
   - mv $HOME/bin/apache-cassandra-2.0.2 $HOME/bin/cassandra
   - chmod a+x $HOME/bin/cassandra/bin/cassandra
   - mkdir -p /var/log/cassandra
-  - chown -R `whoami` /var/log/cassandra
   - mkdir -p /var/lib/cassandra
-  - chown -R `whoami` /var/lib/cassandra
   - popd
 
 script:
