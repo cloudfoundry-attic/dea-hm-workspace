@@ -39,4 +39,4 @@ script:
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
   - export PATH=$HOME/bin/cassandra/bin:$HOME/bin/zookeeper/bin:$GOPATH/bin:$PATH 
   - cd $GOPATH/src/github.com/cloudfoundry/hm9000
-  - ginkgo -r -i --randomizeAllSpecs --failOnPending --skipMeasurements
+  - ginkgo -r -i --randomizeAllSpecs --failOnPending --skip="ZooKeeper|Cassandra|PhD"

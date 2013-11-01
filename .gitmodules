@@ -18,7 +18,7 @@
 	url = https://github.com/codegangsta/cli.git
 [submodule "src/github.com/coreos/etcd"]
 	path = src/github.com/coreos/etcd
-	url = https://github.com/coreos/etcd.git
+	url = https://github.com/cloudfoundry/etcd.git
 [submodule "src/github.com/coreos/go-etcd"]
 	path = src/github.com/coreos/go-etcd
 	url = https://github.com/coreos/go-etcd.git
