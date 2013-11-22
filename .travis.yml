@@ -13,10 +13,8 @@ before_install:
 install:
   - export GOPATH=$HOME/gopath/src/github.com/cloudfoundry/hm-workspace
   - mkdir -p $GOPATH/bin
-  - gem install eventmachine -v 0.12.10
-  - gem install thin -v 1.4.1
-  - gem install nats -v 0.4.28
   - go install -v github.com/onsi/ginkgo/ginkgo
+  - go get -v github.com/apcera/gnatsd
   - pushd ./src/github.com/coreos/etcd
   - ./build
   - mv ./etcd $GOPATH/bin
