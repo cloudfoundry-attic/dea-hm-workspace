@@ -52,3 +52,9 @@
 [submodule "src/github.com/cloudfoundry/gunk"]
 	path = src/github.com/cloudfoundry/gunk
 	url = https://github.com/cloudfoundry/gunk
+[submodule "src/github.com/coreos/go-log"]
+	path = src/github.com/coreos/go-log
+	url = https://github.com/coreos/go-log
+[submodule "src/github.com/coreos/go-systemd"]
+	path = src/github.com/coreos/go-systemd
+	url = https://github.com/coreos/go-systemd
