@@ -12,7 +12,7 @@ install:
   - go get -v github.com/apcera/gnatsd
   - pushd ./src/github.com/coreos/etcd
   - ./build
-  - mv ./etcd $GOPATH/bin
+  - mv ./bin/etcd $GOPATH/bin
   - popd
   - mkdir -p $HOME/bin
   - pushd $HOME/bin
