@@ -67,3 +67,21 @@
 [submodule "src/github.com/stretchr/testify"]
 	path = src/github.com/stretchr/testify
 	url = https://github.com/stretchr/testify
+[submodule "src/github.com/bmizerany/pat"]
+	path = src/github.com/bmizerany/pat
+	url = https://github.com/bmizerany/pat.git
+[submodule "src/github.com/goji/httpauth"]
+	path = src/github.com/goji/httpauth
+	url = https://github.com/goji/httpauth.git
+[submodule "src/github.com/tedsuo/rata"]
+	path = src/github.com/tedsuo/rata
+	url = https://github.com/tedsuo/rata.git
+[submodule "src/github.com/tedsuo/ifrit"]
+	path = src/github.com/tedsuo/ifrit
+	url = https://github.com/tedsuo/ifrit.git
+[submodule "src/github.com/cloudfoundry-incubator/natbeat"]
+	path = src/github.com/cloudfoundry-incubator/natbeat
+	url = https://github.com/cloudfoundry-incubator/natbeat.git
+[submodule "src/github.com/pivotal-golang/lager"]
+	path = src/github.com/pivotal-golang/lager
+	url = https://github.com/pivotal-golang/lager.git
