@@ -85,3 +85,6 @@
 [submodule "src/github.com/pivotal-golang/lager"]
 	path = src/github.com/pivotal-golang/lager
 	url = https://github.com/pivotal-golang/lager.git
+[submodule "src/github.com/pivotal-golang/localip"]
+	path = src/github.com/pivotal-golang/localip
+	url = https://github.com/pivotal-golang/localip.git
