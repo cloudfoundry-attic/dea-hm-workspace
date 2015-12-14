@@ -1,12 +1,3 @@
-[submodule "src/github.com/ccding/go-config-reader"]
-	path = src/github.com/ccding/go-config-reader
-	url = https://github.com/ccding/go-config-reader.git
-[submodule "src/github.com/ccding/go-logging"]
-	path = src/github.com/ccding/go-logging
-	url = https://github.com/ccding/go-logging.git
-[submodule "src/github.com/cloudfoundry/go_cfmessagebus"]
-	path = src/github.com/cloudfoundry/go_cfmessagebus
-	url = https://github.com/cloudfoundry/go_cfmessagebus.git
 [submodule "src/github.com/cloudfoundry/hm9000"]
 	path = src/github.com/cloudfoundry/hm9000
 	url = https://github.com/cloudfoundry/hm9000.git
@@ -16,9 +7,6 @@
 [submodule "src/github.com/codegangsta/cli"]
 	path = src/github.com/codegangsta/cli
 	url = https://github.com/codegangsta/cli.git
-[submodule "src/github.com/coreos/etcd"]
-	path = src/github.com/coreos/etcd
-	url = https://github.com/coreos/etcd.git
 [submodule "src/github.com/coreos/go-etcd"]
 	path = src/github.com/coreos/go-etcd
 	url = https://github.com/coreos/go-etcd.git
@@ -31,42 +19,15 @@
 [submodule "src/github.com/onsi/gomega"]
 	path = src/github.com/onsi/gomega
 	url = https://github.com/onsi/gomega.git
-[submodule "src/github.com/samuel/go-zookeeper"]
-	path = src/github.com/samuel/go-zookeeper
-	url = https://github.com/samuel/go-zookeeper.git
-[submodule "src/github.com/cloudfoundry/loggregatorlib"]
-	path = src/github.com/cloudfoundry/loggregatorlib
-	url = https://github.com/cloudfoundry/loggregatorlib
 [submodule "src/github.com/cloudfoundry/gosteno"]
 	path = src/github.com/cloudfoundry/gosteno
 	url = https://github.com/cloudfoundry/gosteno
-[submodule "src/tux21b.org/v1/gocql"]
-	path = src/tux21b.org/v1/gocql
-	url = https://github.com/tux21b/gocql
 [submodule "src/github.com/cloudfoundry/storeadapter"]
 	path = src/github.com/cloudfoundry/storeadapter
 	url = https://github.com/cloudfoundry/storeadapter
 [submodule "src/github.com/cloudfoundry/gunk"]
 	path = src/github.com/cloudfoundry/gunk
 	url = https://github.com/cloudfoundry/gunk
-[submodule "src/github.com/coreos/go-log"]
-	path = src/github.com/coreos/go-log
-	url = https://github.com/coreos/go-log
-[submodule "src/github.com/coreos/go-systemd"]
-	path = src/github.com/coreos/go-systemd
-	url = https://github.com/coreos/go-systemd
-[submodule "src/github.com/apcera/nats"]
-	path = src/github.com/apcera/nats
-	url = https://github.com/apcera/nats.git
-[submodule "src/github.com/cloudfoundry/dropsonde"]
-	path = src/github.com/cloudfoundry/dropsonde
-	url = https://github.com/cloudfoundry/dropsonde
-[submodule "src/github.com/gorilla/websocket"]
-	path = src/github.com/gorilla/websocket
-	url = https://github.com/gorilla/websocket
-[submodule "src/github.com/stretchr/testify"]
-	path = src/github.com/stretchr/testify
-	url = https://github.com/stretchr/testify
 [submodule "src/github.com/bmizerany/pat"]
 	path = src/github.com/bmizerany/pat
 	url = https://github.com/bmizerany/pat.git
@@ -79,9 +40,6 @@
 [submodule "src/github.com/tedsuo/ifrit"]
 	path = src/github.com/tedsuo/ifrit
 	url = https://github.com/tedsuo/ifrit.git
-[submodule "src/github.com/cloudfoundry-incubator/natbeat"]
-	path = src/github.com/cloudfoundry-incubator/natbeat
-	url = https://github.com/cloudfoundry-incubator/natbeat.git
 [submodule "src/github.com/pivotal-golang/lager"]
 	path = src/github.com/pivotal-golang/lager
 	url = https://github.com/pivotal-golang/lager.git
@@ -91,3 +49,12 @@
 [submodule "src/github.com/cloudfoundry-incubator/cf-debug-server"]
 	path = src/github.com/cloudfoundry-incubator/cf-debug-server
 	url = https://github.com/cloudfoundry-incubator/cf-debug-server.git
+[submodule "src/github.com/nats-io/nats"]
+	path = src/github.com/nats-io/nats
+	url = https://github.com/nats-io/nats.git
+[submodule "src/github.com/ugorji/go"]
+	path = src/github.com/ugorji/go
+	url = https://github.com/ugorji/go.git
+[submodule "src/github.com/pivotal-golang/clock"]
+	path = src/github.com/pivotal-golang/clock
+	url = https://github.com/pivotal-golang/clock.git
