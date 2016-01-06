@@ -3,5 +3,7 @@ pkg
 .DS_Store
 tmp
 etcdstorage
-src/github.com/apcera/gnatsd
 hmperformance
+
+src/github.com/vito/gosub
+src/github.com/apcera/gnatsd
