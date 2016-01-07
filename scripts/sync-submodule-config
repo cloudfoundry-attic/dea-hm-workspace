@@ -25,7 +25,6 @@ go install github.com/vito/gosub
   -app github.com/nats-io/nats/...\
   -app github.com/ugorji/go/...\
   -app github.com/pivotal-golang/clock/...\
-  -app github.com/coreos/etcd/...\
   -app github.com/golang/snappy/...\
   -app github.com/golang/net/...\
   -app github.com/golang/tools/...\
