@@ -73,3 +73,9 @@
 [submodule "src/github.com/gogo/protobuf"]
 	path = src/github.com/gogo/protobuf
 	url = https://github.com/gogo/protobuf
+[submodule "src/dea_next"]
+	path = src/dea_next
+	url = https://github.com/cloudfoundry/dea_ng.git
+[submodule "src/warden"]
+	path = src/warden
+	url = https://github.com/cloudfoundry/warden.git
