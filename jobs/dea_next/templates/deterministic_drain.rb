@@ -1,4 +1,4 @@
-#!/var/vcap/packages/ruby-2.1.8/bin/ruby --disable-all
+#!/var/vcap/packages/ruby-2.2.4/bin/ruby --disable-all
 
 require "logger"
 require "fileutils"
