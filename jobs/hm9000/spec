@@ -18,7 +18,6 @@ templates:
 packages:
   - common
   - hm9000
-  - consul
 
 properties:
   domain:
