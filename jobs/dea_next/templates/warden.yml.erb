@@ -22,9 +22,6 @@ health_check_server:
 network:
   pool_start_address: 10.254.0.0
   pool_size: 256
-  <% if_p("dea_next.deny_networks") do |deny_networks| %>
-  deny_networks: <%= deny_networks %>
-  <% end %>
   <% if_p("dea_next.allow_networks") do |allow_networks| %>
   allow_networks: <%= allow_networks %>
   <% end %>
