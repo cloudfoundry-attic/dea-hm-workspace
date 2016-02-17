@@ -6,7 +6,7 @@ description: "The DEA is responsible for running customer applications and maint
 templates:
   dea.yml.erb: config/dea.yml
   dea_ctl.erb: bin/dea_ctl
-  deterministic_drain.rb: bin/drain
+  deterministic_drain.erb: bin/drain
   dns_health_check.erb: bin/dns_health_check
 
   warden.yml.erb: config/warden.yml
