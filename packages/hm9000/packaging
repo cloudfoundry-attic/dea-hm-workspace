@@ -3,6 +3,6 @@ set -e -x
 export GOROOT=$(readlink -nf /var/vcap/packages/golang1.5)
 export PATH=$GOROOT/bin:$PATH
 
-export GOPATH=$PWD/hm9000
+export GOPATH=$PWD/dea-hm-workspace
 go install github.com/cloudfoundry/hm9000
-cp -a $PWD/hm9000/bin/hm9000 ${BOSH_INSTALL_TARGET}
+cp -a $GOPATH/bin/hm9000 ${BOSH_INSTALL_TARGET}

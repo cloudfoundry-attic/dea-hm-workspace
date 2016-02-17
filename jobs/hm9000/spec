@@ -8,7 +8,6 @@ templates:
   hm9000_fetcher_ctl: bin/hm9000_fetcher_ctl
   hm9000_analyzer_ctl: bin/hm9000_analyzer_ctl
   hm9000_sender_ctl: bin/hm9000_sender_ctl
-  hm9000_metrics_server_ctl: bin/hm9000_metrics_server_ctl
   hm9000_api_server_ctl: bin/hm9000_api_server_ctl
   hm9000_evacuator_ctl: bin/hm9000_evacuator_ctl
   hm9000_shredder_ctl: bin/hm9000_shredder_ctl
