@@ -49,6 +49,7 @@ case $1 in
     # Allowed number of open file descriptors
     ulimit -n 100000
 
+    export GODEBUG=netdns=cgo
     exec chpst -u vcap:vcap /var/vcap/packages/hm9000/hm9000 \
         serve_api \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \

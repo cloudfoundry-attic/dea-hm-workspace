@@ -27,6 +27,7 @@ case $1 in
 
     echo $$ > $PIDFILE
 
+    export GODEBUG=netdns=cgo
     exec chpst -u vcap:vcap /var/vcap/packages/hm9000/hm9000 \
         shred \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
