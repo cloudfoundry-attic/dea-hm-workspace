@@ -15,6 +15,14 @@ source /var/vcap/packages/common/utils.sh
 case $1 in
 
   start)
+    set +e
+    host dea.service.cf.internal
+    if [[ "0" != "$?" ]]; then
+      echo "DNS is not up"
+      exit 1
+    fi
+    set -e
+
     pid_guard $PIDFILE "DEA"
 
     mkdir -p $RUN_DIR
