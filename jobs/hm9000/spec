@@ -62,3 +62,6 @@ properties:
     default: 60
   hm9000.port:
     description: "The port to serve API requests"
+
+  metron_agent.dropsonde_incoming_port:
+    description: "Incoming port for dropsonde log messages"

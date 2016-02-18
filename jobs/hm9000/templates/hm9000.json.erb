@@ -12,10 +12,6 @@
     "store_schema_version": 4,
     "store_urls": [<%= p("etcd.machines").map{|addr| "\"http://#{addr}:4001\""}.join(",")%>],
 
-    "metrics_server_port": 0,
-    "metrics_server_user": "",
-    "metrics_server_password": "",
-
     "log_level": "INFO",
     "log_directory": "/var/vcap/sys/log/hm9000",
 
@@ -23,6 +19,8 @@
     "api_server_port": <%= p("hm9000.port") %>,
     "api_server_username": "<%= p("cc.internal_api_user") %>",
     "api_server_password": "<%= p("cc.internal_api_password") %>",
+
+    "dropsonde_port": <%= p("metron_agent.dropsonde_incoming_port") %>,
 
     "nats": <%=
   p("nats.machines").collect do |addr|
