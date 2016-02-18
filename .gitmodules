@@ -58,18 +58,6 @@
 [submodule "src/github.com/pivotal-golang/clock"]
 	path = src/github.com/pivotal-golang/clock
 	url = https://github.com/pivotal-golang/clock.git
-[submodule "src/github.com/golang/snappy"]
-	path = src/github.com/golang/snappy
-	url = https://github.com/golang/snappy
-[submodule "src/github.com/golang/net"]
-	path = src/github.com/golang/net
-	url = https://github.com/golang/net
-[submodule "src/github.com/golang/tools"]
-	path = src/github.com/golang/tools
-	url = https://github.com/golang/tools
-[submodule "src/github.com/golang/protobuf"]
-	path = src/github.com/golang/protobuf
-	url = https://github.com/golang/protobuf
 [submodule "src/github.com/gogo/protobuf"]
 	path = src/github.com/gogo/protobuf
 	url = https://github.com/gogo/protobuf
