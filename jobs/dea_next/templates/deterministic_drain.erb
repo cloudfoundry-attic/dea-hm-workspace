@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash
 
 RUN_DIR=/var/vcap/sys/run/dea_next
 LOG_DIR=/var/vcap/sys/log/dea_next
@@ -6,10 +6,11 @@ LOGFILE=$LOG_DIR/drain.log
 PIDFILE=$RUN_DIR/dea_next.pid
 
 exec 3>&1
-exec 1>>$LOGFILE
-exec 2>>$LOGFILE
 
 source /var/vcap/packages/common/utils.sh
+
+exec 1>> $LOGFILE
+exec 2>> $LOGFILE
 
 if [ ! -f $PIDFILE ]; then
   echo "$(date): PIDFILE does not exist"
@@ -20,8 +21,9 @@ fi
 pid=$(cat $PIDFILE)
 kill -USR2 $pid
 
-echo "$(date): drain triggered"
+echo "$(date): drain triggered for $pid"
 
-wait_pidfile $PIDFILE 0 <%= p("dea_next.evacuation_bail_out_time_in_seconds") %>
+# must force kill because the pidfile is removed
+wait_pidfile $PIDFILE 0 <%= p("dea_next.evacuation_bail_out_time_in_seconds") + 1 %> 1
 echo 0 >&3
 exit 0
