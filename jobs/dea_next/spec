@@ -144,8 +144,9 @@ properties:
     description: "Interval at which the router requests routes to be registered."
     default: 20
 
-  cc.srv_api_uri:
-    description: "API URI of cloud controller"
+  cc.external_port:
+    description: "External Cloud Controller port"
+    default: 9022
   cc.internal_api_user:
     default: "internal_user"
     description: "User name to access internal endpoints"
