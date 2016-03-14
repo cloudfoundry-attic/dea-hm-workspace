@@ -1,4 +1,11 @@
 ---
+<% if_p('dea_next.enable_ssl') do %>
+ssl:
+  port: <%= p('dea_next.ssl_port') %>
+  key_file: /var/vcap/jobs/dea_next/config/certs/server.key
+  cert_file: /var/vcap/jobs/dea_next/config/certs/server.crt
+<% end %>
+
 nats_servers:
 <% p("nats.machines").each do |address| %>
   - nats://<%= p("nats.user") %>:<%= p("nats.password") %>@<%= address %>:<%= p("nats.port") %>
@@ -39,6 +46,7 @@ loggregator:
   router: <%= host %>:<%= port %>
 <% end %>
 
+service_name: <%= "#{name.gsub('_', '-')}-#{spec.index}.dea.service.cf.internal" %>
 index: <%= spec.index %>
 
 intervals:

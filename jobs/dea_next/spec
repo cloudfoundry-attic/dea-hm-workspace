@@ -14,6 +14,9 @@ templates:
 
   dir_server_ctl.erb: bin/dir_server_ctl
 
+  server.crt.erb: config/certs/server.crt
+  server.key.erb: config/certs/server.key
+
 packages:
 - common
 - dea_next
@@ -130,6 +133,23 @@ properties:
     description: "An array of stacks, specifying the name and package path."
   dea_next.post_setup_hook:
     description: "DEPRECATED: a single line of bash to prepend to the start command"
+  dea_next.enable_ssl:
+    description: "enable ssl for all communication with DEAs"
+    default: true
+  dea_next.ssl_port:
+    description: "SSL port for DEA"
+    default: 22443
+  dea_next.ca_cert:
+    description: "PEM-encoded CA certificate"
+  dea_next.server_cert:
+    description: "PEM-encoded server certificate"
+  dea_next.server_key:
+    description: "PEM-encoded server key"
+  dea_next.client_cert:
+    description: "PEM-encoded agent certificate"
+  dea_next.client_key:
+    description: "PEM-encoded client key"
+
   disk_quota_enabled:
     description: "disk quota must be disabled to use warden-inside-warden with the warden cpi"
     default: true
