@@ -5,6 +5,10 @@ dependencies:
 files:
   - dea-hm-workspace/src/github.com/bmizerany/pat/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry-incubator/cf-debug-server/*.go # gosub
+  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/cf_http/*.go # gosub
+  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/consuladapter/*.go # gosub
+  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/locket/*.go # gosub
+  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/runtime-schema/metric/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/emitter/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/envelope_sender/*.go # gosub
@@ -22,7 +26,7 @@ files:
   - dea-hm-workspace/src/github.com/cloudfoundry/gosteno/syslog/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/gunk/workpool/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/actualstatelistener/*.go # gosub
+  - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/actualstatelisteners/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/analyzer/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/apiserver/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/apiserver/handlers/*.go # gosub
@@ -30,7 +34,6 @@ files:
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/desiredstatefetcher/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/evacuator/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/helpers/httpclient/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/helpers/logger/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/helpers/metricsaccountant/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/hm/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/models/*.go # gosub
@@ -47,6 +50,9 @@ files:
   - dea-hm-workspace/src/github.com/gogo/protobuf/proto/*.go # gosub
   - dea-hm-workspace/src/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/*.go # gosub
   - dea-hm-workspace/src/github.com/goji/httpauth/*.go # gosub
+  - dea-hm-workspace/src/github.com/hashicorp/consul/api/*.go # gosub
+  - dea-hm-workspace/src/github.com/hashicorp/go-cleanhttp/*.go # gosub
+  - dea-hm-workspace/src/github.com/hashicorp/serf/coordinate/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/encoders/builtin/*.go # gosub
   - dea-hm-workspace/src/github.com/nu7hatch/gouuid/*.go # gosub
