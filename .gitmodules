@@ -96,3 +96,9 @@
 [submodule "src/github.com/pivotal-golang/localip"]
 	path = src/github.com/pivotal-golang/localip
 	url = https://github.com/pivotal-golang/localip
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo.git
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega.git
