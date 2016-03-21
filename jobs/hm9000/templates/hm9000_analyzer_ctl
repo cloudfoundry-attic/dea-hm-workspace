@@ -32,7 +32,10 @@ case $1 in
         analyze \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --debugAddr="0.0.0.0:17001" \
-        --poll
+        --poll \
+        2> >(tee -a $LOG_DIR/hm9000_analyzer.stderr.log | logger -p user.error -t vcap.hm9000.analyzer) \
+        1> >(tee -a $LOG_DIR/hm9000_analyzer.log | logger -p user.info -t vcap.hm9000.analyzer)
+
     ;;
 
   stop)

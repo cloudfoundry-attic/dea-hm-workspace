@@ -32,7 +32,9 @@ case $1 in
         send \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --poll \
-        --debugAddr="0.0.0.0:17007"
+        --debugAddr="0.0.0.0:17007" \
+        2> >(tee -a $LOG_DIR/hm9000_sender.stderr.log | logger -p user.error -t vcap.hm9000.sender) \
+        1> >(tee -a $LOG_DIR/hm9000_sender.log | logger -p user.info -t vcap.hm9000.sender)
 
     ;;
 

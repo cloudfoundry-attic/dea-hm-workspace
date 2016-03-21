@@ -54,7 +54,9 @@ case $1 in
         fetch_desired \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --poll \
-        --debugAddr="0.0.0.0:17004"
+        --debugAddr="0.0.0.0:17004" \
+        2> >(tee -a $LOG_DIR/hm9000_fetcher.stderr.log | logger -p user.error -t vcap.hm9000.fetcher) \
+        1> >(tee -a $LOG_DIR/hm9000_fetcher.log | logger -p user.info -t vcap.hm9000.fetcher)
 
     ;;
 

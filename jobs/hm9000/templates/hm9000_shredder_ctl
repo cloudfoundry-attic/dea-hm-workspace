@@ -32,7 +32,9 @@ case $1 in
         shred \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --poll \
-        --debugAddr="0.0.0.0:17008"
+        --debugAddr="0.0.0.0:17008" \
+        2> >(tee -a $LOG_DIR/hm9000_shredder.stderr.log | logger -p user.error -t vcap.hm9000.shredder) \
+        1> >(tee -a $LOG_DIR/hm9000_shredder.log | logger -p user.info -t vcap.hm9000.shredder)
 
     ;;
 

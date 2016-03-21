@@ -53,7 +53,9 @@ case $1 in
     exec chpst -u vcap:vcap /var/vcap/packages/hm9000/hm9000 \
         listen \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
-        --debugAddr="0.0.0.0:17005"
+        --debugAddr="0.0.0.0:17005" \
+        2> >(tee -a $LOG_DIR/hm9000_listener.stderr.log | logger -p user.error -t vcap.hm9000.listener) \
+        1> >(tee -a $LOG_DIR/hm9000_listener.log | logger -p user.info -t vcap.hm9000.listener)
 
     ;;
 
