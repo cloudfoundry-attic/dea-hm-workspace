@@ -13,7 +13,6 @@
     "store_urls": [<%= p("etcd.machines").map{|addr| "\"http://#{addr}:4001\""}.join(",")%>],
 
     "log_level": "INFO",
-    "log_directory": "/var/vcap/sys/log/hm9000",
 
     "api_server_address": "0.0.0.0",
     "api_server_port": <%= p("hm9000.port") %>,
