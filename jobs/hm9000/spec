@@ -65,3 +65,4 @@ properties:
 
   metron_agent.dropsonde_incoming_port:
     description: "Incoming port for dropsonde log messages"
+    default: 3457
