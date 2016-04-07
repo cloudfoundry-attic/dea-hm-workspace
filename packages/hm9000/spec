@@ -1,7 +1,7 @@
 ---
 name: hm9000
 dependencies:
-  - golang1.5
+  - golang1.6
 files:
   - dea-hm-workspace/src/github.com/bmizerany/pat/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry-incubator/cf-debug-server/*.go # gosub
