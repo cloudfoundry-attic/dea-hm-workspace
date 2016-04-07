@@ -21,6 +21,12 @@
 
     "dropsonde_port": <%= p("metron_agent.dropsonde_incoming_port") %>,
 
+    "ssl": {
+      "key_file": "/var/vcap/jobs/hm9000/config/certs/server.key",
+      "cert_file": "/var/vcap/jobs/hm9000/config/certs/server.crt",
+      "ca_file": "/var/vcap/jobs/hm9000/config/certs/ca.crt"
+    },
+
     "nats": <%=
   p("nats.machines").collect do |addr|
     {

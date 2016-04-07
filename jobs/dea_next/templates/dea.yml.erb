@@ -96,6 +96,12 @@ placement_properties:
 %>
 cc_url: <%= cc_url.to_s %>
 
+hm9000:
+  listener_uri: https://listener-hm9000.service.cf.internal:5335
+  key_file: /var/vcap/jobs/dea_next/config/certs/hm9000_client.key
+  cert_file: /var/vcap/jobs/dea_next/config/certs/hm9000_client.crt
+  ca_file: /var/vcap/jobs/dea_next/config/certs/hm9000_ca.crt
+
 <% if_p("dea_next.post_setup_hook") do |hook| %>
 post_setup_hook: <%= hook %>
 <% end %>

@@ -17,6 +17,10 @@ templates:
   server.crt.erb: config/certs/server.crt
   server.key.erb: config/certs/server.key
 
+  hm9000_client.crt.erb: config/certs/hm9000_client.crt
+  hm9000_client.key.erb: config/certs/hm9000_client.key
+  hm9000_ca.crt.erb: config/certs/hm9000_ca.crt
+
 packages:
 - common
 - dea_next
@@ -159,6 +163,13 @@ properties:
   metron_endpoint.port:
     description: "The port used to emit messages to the Metron agent"
     default: 3457
+
+  hm9000.client_key:
+    description: "PEM-encoded client key"
+  hm9000.client_cert:
+    description: "PEM-encoded client certificate"
+  hm9000.ca_cert:
+    description: "PEM-encoded CA certificate"
 
   router.requested_route_registration_interval_in_seconds:
     description: "Interval at which the router requests routes to be registered."
