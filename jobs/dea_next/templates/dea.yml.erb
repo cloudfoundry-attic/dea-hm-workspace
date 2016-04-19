@@ -34,7 +34,7 @@ directory_server:
     syslog: vcap.directory_server
     level: <%= p("dea_next.logging_level") %>
 
-domain: <%= p("domain") %>
+domain: <%= p("system_domain") %>
 
 logging:
   file: /var/vcap/sys/log/dea_next/dea_next.log

@@ -22,9 +22,6 @@ packages:
   - hm9000
 
 properties:
-  domain:
-    description: "domain where cloud_controller will listen (api.domain) often the same as the system domain"
-
   nats.user:
     description:
   nats.password:

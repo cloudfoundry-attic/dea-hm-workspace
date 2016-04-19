@@ -29,7 +29,7 @@ packages:
 - ruby-2.2.4
 
 properties:
-  domain:
+  system_domain:
     description: "DNS domain name for this Cloud Foundry deployment"
   nats.password:
     description: "password for NATS login"
