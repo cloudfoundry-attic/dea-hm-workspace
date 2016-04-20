@@ -41,7 +41,7 @@ logging:
   level: <%= p("dea_next.logging_level") %>
   syslog: vcap.dea_next
 
-<% if_p("metron_endpoint.host", "metron_endpoint.port") do |host, port| %>
+<% if_p("metron_endpoint.host", "metron_agent.dropsonde_incoming_port") do |host, port| %>
 loggregator:
   router: <%= host %>:<%= port %>
 <% end %>
