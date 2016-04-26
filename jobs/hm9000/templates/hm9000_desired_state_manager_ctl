@@ -2,7 +2,7 @@
 
 RUN_DIR=/var/vcap/sys/run/hm9000
 LOG_DIR=/var/vcap/sys/log/hm9000
-PIDFILE=$RUN_DIR/hm9000_fetcher.pid
+PIDFILE=$RUN_DIR/hm9000_desired_state_manager.pid
 
 source /var/vcap/packages/common/utils.sh
 
@@ -17,7 +17,7 @@ case $1 in
     fi
     set -e
 
-    pid_guard $PIDFILE "hm9000_fetcher"
+    pid_guard $PIDFILE "hm9000_desired_state_manager"
 
     mkdir -p $RUN_DIR
     mkdir -p $LOG_DIR
@@ -51,12 +51,12 @@ case $1 in
 
     export GODEBUG=netdns=cgo
     exec chpst -u vcap:vcap /var/vcap/packages/hm9000/hm9000 \
-        fetch_desired \
+        manage_desired \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --poll \
         --debugAddr="0.0.0.0:17004" \
-        2> >(tee -a $LOG_DIR/hm9000_fetcher.stderr.log | logger -p user.error -t vcap.hm9000.fetcher) \
-        1> >(tee -a $LOG_DIR/hm9000_fetcher.log | logger -p user.info -t vcap.hm9000.fetcher)
+        2> >(tee -a $LOG_DIR/hm9000_desired_state_manager.stderr.log | logger -p user.error -t vcap.hm9000.desired_state_manager) \
+        1> >(tee -a $LOG_DIR/hm9000_desired_state_manager.log | logger -p user.info -t vcap.hm9000.desired_state_manager)
 
     ;;
 
@@ -66,7 +66,7 @@ case $1 in
     ;;
 
   *)
-    echo "Usage: hm9000_fetcher_ctl {start|stop}"
+    echo "Usage: hm9000_desired_state_manager_ctl {start|stop}"
 
     ;;
 
