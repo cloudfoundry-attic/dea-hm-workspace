@@ -5,11 +5,25 @@ check process hm9000_listener
   stop program "/var/vcap/jobs/hm9000/bin/hm9000_listener_ctl stop"
   group vcap
 
-check process hm9000_desired_state_manager
-  with pidfile /var/vcap/sys/run/hm9000/hm9000_desired_state_manager.pid
-  start program "/var/vcap/jobs/hm9000/bin/hm9000_desired_state_manager_ctl start"
+check process hm9000_fetcher
+  with pidfile /var/vcap/sys/run/hm9000/hm9000_fetcher.pid
+  start program "/var/vcap/jobs/hm9000/bin/hm9000_fetcher_ctl start"
     with timeout 60 seconds
-  stop program "/var/vcap/jobs/hm9000/bin/hm9000_desired_state_manager_ctl stop"
+  stop program "/var/vcap/jobs/hm9000/bin/hm9000_fetcher_ctl stop"
+  group vcap
+
+check process hm9000_analyzer
+  with pidfile /var/vcap/sys/run/hm9000/hm9000_analyzer.pid
+  start program "/var/vcap/jobs/hm9000/bin/hm9000_analyzer_ctl start"
+    with timeout 60 seconds
+  stop program "/var/vcap/jobs/hm9000/bin/hm9000_analyzer_ctl stop"
+  group vcap
+
+check process hm9000_sender
+  with pidfile /var/vcap/sys/run/hm9000/hm9000_sender.pid
+  start program "/var/vcap/jobs/hm9000/bin/hm9000_sender_ctl start"
+    with timeout 60 seconds
+  stop program "/var/vcap/jobs/hm9000/bin/hm9000_sender_ctl stop"
   group vcap
 
 check process hm9000_api_server

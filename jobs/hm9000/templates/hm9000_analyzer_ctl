@@ -2,9 +2,11 @@
 
 RUN_DIR=/var/vcap/sys/run/hm9000
 LOG_DIR=/var/vcap/sys/log/hm9000
-PIDFILE=$RUN_DIR/hm9000_desired_state_manager.pid
+PIDFILE=$RUN_DIR/hm9000_analyzer.pid
 
 source /var/vcap/packages/common/utils.sh
+
+
 
 case $1 in
 
@@ -17,7 +19,7 @@ case $1 in
     fi
     set -e
 
-    pid_guard $PIDFILE "hm9000_desired_state_manager"
+    pid_guard $PIDFILE "hm9000_analyzer"
 
     mkdir -p $RUN_DIR
     mkdir -p $LOG_DIR
@@ -51,12 +53,12 @@ case $1 in
 
     export GODEBUG=netdns=cgo
     exec chpst -u vcap:vcap /var/vcap/packages/hm9000/hm9000 \
-        manage_desired \
+        analyze \
         --config=/var/vcap/jobs/hm9000/config/hm9000.json \
         --poll \
         --debugAddr="0.0.0.0:17004" \
-        2> >(tee -a $LOG_DIR/hm9000_desired_state_manager.stderr.log | logger -p user.error -t vcap.hm9000.desired_state_manager) \
-        1> >(tee -a $LOG_DIR/hm9000_desired_state_manager.log | logger -p user.info -t vcap.hm9000.desired_state_manager)
+        2> >(tee -a $LOG_DIR/hm9000_analyzer.stderr.log | logger -p user.error -t vcap.hm9000.analyzer) \
+        1> >(tee -a $LOG_DIR/hm9000_analyzer.log | logger -p user.info -t vcap.hm9000.analyzer)
 
     ;;
 
@@ -66,7 +68,7 @@ case $1 in
     ;;
 
   *)
-    echo "Usage: hm9000_desired_state_manager_ctl {start|stop}"
+    echo "Usage: hm9000_anaylzer {start|stop}"
 
     ;;
 
