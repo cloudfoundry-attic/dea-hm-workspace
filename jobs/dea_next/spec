@@ -26,7 +26,7 @@ packages:
 - dea_next
 - warden
 - rootfs_cflinuxfs2
-- ruby-2.2.4
+- ruby-2.3
 
 properties:
   system_domain:
