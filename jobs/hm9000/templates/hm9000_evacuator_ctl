@@ -10,7 +10,7 @@ case $1 in
 
   start)
     set +e
-    host hm9000.service.cf.internal
+    host consul.service.cf.internal
     if [[ "0" != "$?" ]]; then
       echo "DNS is not up"
       mon 1
