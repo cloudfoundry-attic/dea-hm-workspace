@@ -5,6 +5,9 @@
     "cc_auth_password": "<%= p("cc.bulk_api_password") %>",
     "cc_base_url": "<%= p("cc.srv_api_uri") %>",
     "skip_cert_verify": <%= p("ssl.skip_cert_verify") %>,
+
+    "cc_internal_url": "http://cloud-controller-ng.service.cf.internal:<%=p('cc.external_port')%>",
+
     "desired_state_batch_size": <%= p("hm9000.desired_state_batch_size") %>,
     "fetcher_network_timeout_in_seconds": <%= p("hm9000.fetcher_network_timeout_in_seconds") %>,
     "sender_message_limit": <%= p("hm9000.sender_message_limit") %>,
