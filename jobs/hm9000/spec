@@ -44,6 +44,7 @@ properties:
     description: "Password for hm9000 API"
   cc.external_port:
     description: "External port to connect to the CC"
+    default: 9022
   dea_next.heartbeat_interval_in_seconds:
     description: "Heartbeat interval for DEAs"
 
