@@ -149,6 +149,8 @@ properties:
     description: "PEM-encoded server certificate"
   dea_next.server_key:
     description: "PEM-encoded server key"
+  dea_next.dns_servers:
+    description: "List of nameservers to use in containers"
 
   disk_quota_enabled:
     description: "disk quota must be disabled to use warden-inside-warden with the warden cpi"
