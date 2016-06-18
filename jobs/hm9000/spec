@@ -16,6 +16,9 @@ templates:
   server.crt.erb: config/certs/server.crt
   ca.crt.erb: config/certs/ca.crt
   dns_health_check.erb: bin/dns_health_check
+  etcd_client.key.erb: config/certs/etcd_client.key
+  etcd_client.crt.erb: config/certs/etcd_client.crt
+  etcd_ca.crt.erb: config/certs/etcd_ca.crt
 
 packages:
   - common
@@ -50,6 +53,15 @@ properties:
 
   etcd.machines:
     description: "IPs pointing to the ETCD cluster"
+  etcd.require_ssl:
+    description: "Require TLS for communication with ETCD"
+  etcd.ca_cert:
+    description: "PEM-encoded CA certificate"
+  etcd.client_key:
+    description: "PEM-encoded client key to communicate with ETCD"
+  etcd.client_cert:
+    description: "PEM-encoded client certificate to communicate with ETCD"
+
   ssl.skip_cert_verify:
     description: "when connecting over https, ignore bad ssl certificates"
     default: false
