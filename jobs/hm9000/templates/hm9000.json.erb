@@ -29,8 +29,8 @@
       "ca_file": "/var/vcap/jobs/hm9000/config/certs/ca.crt"
     },
 
-    "etcd_require_ssl": <%= p("etcd.require_ssl") %>,
-    <% if p("etcd.require_ssl") %>
+    "etcd_require_ssl": <%= p("hm9000.etcd.require_ssl") %>,
+    <% if p("hm9000.etcd.require_ssl") %>
     "store_urls": [<%= p("etcd.machines").map{|addr| "\"https://#{addr}:4001\""}.join(",")%>],
     "etcd": {
         "key_file": "/var/vcap/jobs/hm9000/config/certs/etcd_client.key",

@@ -53,13 +53,14 @@ properties:
 
   etcd.machines:
     description: "IPs pointing to the ETCD cluster"
-  etcd.require_ssl:
+  hm9000.etcd.require_ssl:
     description: "Require TLS for communication with ETCD"
-  etcd.ca_cert:
+    default: false
+  hm9000.etcd.ca_cert:
     description: "PEM-encoded CA certificate"
-  etcd.client_key:
+  hm9000.etcd.client_key:
     description: "PEM-encoded client key to communicate with ETCD"
-  etcd.client_cert:
+  hm9000.etcd.client_cert:
     description: "PEM-encoded client certificate to communicate with ETCD"
 
   ssl.skip_cert_verify:
