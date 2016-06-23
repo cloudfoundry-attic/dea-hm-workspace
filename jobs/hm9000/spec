@@ -51,7 +51,7 @@ properties:
   dea_next.heartbeat_interval_in_seconds:
     description: "Heartbeat interval for DEAs"
 
-  etcd.machines:
+  hm9000.etcd.machines:
     description: "IPs pointing to the ETCD cluster"
   hm9000.etcd.require_ssl:
     description: "Require TLS for communication with ETCD"

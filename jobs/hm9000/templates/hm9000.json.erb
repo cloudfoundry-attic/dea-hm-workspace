@@ -31,14 +31,14 @@
 
     "etcd_require_ssl": <%= p("hm9000.etcd.require_ssl") %>,
     <% if p("hm9000.etcd.require_ssl") %>
-    "store_urls": [<%= p("etcd.machines").map{|addr| "\"https://#{addr}:4001\""}.join(",")%>],
+    "store_urls": [<%= p("hm9000.etcd.machines").map{|addr| "\"https://#{addr}:4001\""}.join(",")%>],
     "etcd": {
         "key_file": "/var/vcap/jobs/hm9000/config/certs/etcd_client.key",
         "cert_file": "/var/vcap/jobs/hm9000/config/certs/etcd_client.crt",
         "ca_file": "/var/vcap/jobs/hm9000/config/certs/etcd_ca.crt"
     },
     <% else %>
-    "store_urls": [<%= p("etcd.machines").map{|addr| "\"http://#{addr}:4001\""}.join(",")%>],
+    "store_urls": [<%= p("hm9000.etcd.machines").map{|addr| "\"http://#{addr}:4001\""}.join(",")%>],
     <% end %>
 
     "nats": <%=
