@@ -34,6 +34,9 @@ case $1 in
     ulimit -c unlimited
     ulimit -n 4096
 
+    # Restrics dmesg access
+    echo 1 > /proc/sys/kernel/dmesg_restrict
+
     <% if p("dea_next.kernel_network_tuning_enabled") == true %>
     # Use default local port range (higher ports are used for pooling)
     echo 32768 61000 > /proc/sys/net/ipv4/ip_local_port_range
