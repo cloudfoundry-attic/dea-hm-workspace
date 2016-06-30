@@ -3,12 +3,13 @@ name: hm9000
 dependencies:
   - golang1.6
 files:
+  - dea-hm-workspace/src/code.cloudfoundry.org/cfhttp/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/cfhttp/unix_transport/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/consuladapter/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/debugserver/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/locket/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/runtimeschema/metric/*.go # gosub
   - dea-hm-workspace/src/github.com/bmizerany/pat/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/cf-debug-server/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/cf_http/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/consuladapter/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/locket/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry-incubator/runtime-schema/metric/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/emitter/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/envelope_sender/*.go # gosub
@@ -51,8 +52,8 @@ files:
   - dea-hm-workspace/src/github.com/gogo/protobuf/protoc-gen-gogo/descriptor/*.go # gosub
   - dea-hm-workspace/src/github.com/goji/httpauth/*.go # gosub
   - dea-hm-workspace/src/github.com/hashicorp/consul/api/*.go # gosub
-  - dea-hm-workspace/src/github.com/hashicorp/go-cleanhttp/*.go # gosub
-  - dea-hm-workspace/src/github.com/hashicorp/serf/coordinate/*.go # gosub
+  - dea-hm-workspace/src/github.com/hashicorp/consul/vendor/github.com/hashicorp/go-cleanhttp/*.go # gosub
+  - dea-hm-workspace/src/github.com/hashicorp/consul/vendor/github.com/hashicorp/serf/coordinate/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/encoders/builtin/*.go # gosub
   - dea-hm-workspace/src/github.com/nu7hatch/gouuid/*.go # gosub
