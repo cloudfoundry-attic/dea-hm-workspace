@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nc -z 127.0.0.1 <%= p('hm9000.port') %>
+nc -z 127.0.0.1 5155
 
 # http://www.consul.io/docs/agent/checks.html
 if [ $? -ne 0 ]; then
