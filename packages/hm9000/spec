@@ -5,8 +5,10 @@ dependencies:
 files:
   - dea-hm-workspace/src/code.cloudfoundry.org/cfhttp/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/cfhttp/unix_transport/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/clock/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/consuladapter/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/debugserver/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/lager/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/locket/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/runtimeschema/metric/*.go # gosub
   - dea-hm-workspace/src/github.com/bmizerany/pat/*.go # gosub
@@ -57,8 +59,6 @@ files:
   - dea-hm-workspace/src/github.com/nats-io/nats/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/encoders/builtin/*.go # gosub
   - dea-hm-workspace/src/github.com/nu7hatch/gouuid/*.go # gosub
-  - dea-hm-workspace/src/github.com/pivotal-golang/clock/*.go # gosub
-  - dea-hm-workspace/src/github.com/pivotal-golang/lager/*.go # gosub
   - dea-hm-workspace/src/github.com/tedsuo/ifrit/*.go # gosub
   - dea-hm-workspace/src/github.com/tedsuo/ifrit/grouper/*.go # gosub
   - dea-hm-workspace/src/github.com/tedsuo/ifrit/http_server/*.go # gosub
