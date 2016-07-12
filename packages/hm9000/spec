@@ -58,6 +58,7 @@ files:
   - dea-hm-workspace/src/github.com/hashicorp/consul/vendor/github.com/hashicorp/serf/coordinate/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/*.go # gosub
   - dea-hm-workspace/src/github.com/nats-io/nats/encoders/builtin/*.go # gosub
+  - dea-hm-workspace/src/github.com/nats-io/nuid/*.go # gosub
   - dea-hm-workspace/src/github.com/nu7hatch/gouuid/*.go # gosub
   - dea-hm-workspace/src/github.com/tedsuo/ifrit/*.go # gosub
   - dea-hm-workspace/src/github.com/tedsuo/ifrit/grouper/*.go # gosub

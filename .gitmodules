@@ -98,3 +98,6 @@
 [submodule "src/code.cloudfoundry.org/localip"]
 	path = src/code.cloudfoundry.org/localip
 	url = https://github.com/cloudfoundry/localip
+[submodule "src/github.com/nats-io/nuid"]
+	path = src/github.com/nats-io/nuid
+	url = https://github.com/nats-io/nuid
