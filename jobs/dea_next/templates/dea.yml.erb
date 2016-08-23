@@ -1,5 +1,5 @@
 ---
-<% if_p('dea_next.enable_ssl') do %>
+<% if p('dea_next.enable_ssl') %>
 ssl:
   port: <%= p('dea_next.ssl_port') %>
   key_file: /var/vcap/jobs/dea_next/config/certs/server.key
