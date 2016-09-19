@@ -20,9 +20,6 @@
 [submodule "src/github.com/cloudfoundry/storeadapter"]
 	path = src/github.com/cloudfoundry/storeadapter
 	url = https://github.com/cloudfoundry/storeadapter
-[submodule "src/github.com/cloudfoundry/gunk"]
-	path = src/github.com/cloudfoundry/gunk
-	url = https://github.com/cloudfoundry/gunk
 [submodule "src/github.com/bmizerany/pat"]
 	path = src/github.com/bmizerany/pat
 	url = https://github.com/bmizerany/pat
@@ -101,3 +98,6 @@
 [submodule "src/github.com/nats-io/nuid"]
 	path = src/github.com/nats-io/nuid
 	url = https://github.com/nats-io/nuid
+[submodule "src/code.cloudfoundry.org/workpool"]
+	path = src/code.cloudfoundry.org/workpool
+	url = https://github.com/cloudfoundry/workpool

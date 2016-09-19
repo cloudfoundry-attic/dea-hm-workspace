@@ -11,6 +11,7 @@ files:
   - dea-hm-workspace/src/code.cloudfoundry.org/lager/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/locket/*.go # gosub
   - dea-hm-workspace/src/code.cloudfoundry.org/runtimeschema/metric/*.go # gosub
+  - dea-hm-workspace/src/code.cloudfoundry.org/workpool/*.go # gosub
   - dea-hm-workspace/src/github.com/bmizerany/pat/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/emitter/*.go # gosub
@@ -27,7 +28,6 @@ files:
   - dea-hm-workspace/src/github.com/cloudfoundry/dropsonde/runtime_stats/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/gosteno/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/gosteno/syslog/*.go # gosub
-  - dea-hm-workspace/src/github.com/cloudfoundry/gunk/workpool/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/actualstatelisteners/*.go # gosub
   - dea-hm-workspace/src/github.com/cloudfoundry/hm9000/analyzer/*.go # gosub
