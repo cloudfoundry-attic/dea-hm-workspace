@@ -30,6 +30,9 @@ case $1 in
     if running_in_container; then
         echo "Not setting /proc/sys/net/ipv4 parameters, since I'm running inside a linux container"
     else
+        # Ephemeral port range
+        echo "1024 65535" > /proc/sys/net/ipv4/ip_local_port_range
+
         # TCP_FIN_TIMEOUT
         # This setting determines the time that must elapse before TCP/IP can release a closed connection and reuse
         # its resources. During this TIME_WAIT state, reopening the connection to the client costs less than establishing
@@ -37,7 +40,7 @@ case $1 in
         # resources available for new connections. Addjust this in the presense of many connections sitting in the
         # TIME_WAIT state:
 
-        echo 10 > /proc/sys/net/ipv4/tcp_fin_timeout
+        echo 5 > /proc/sys/net/ipv4/tcp_fin_timeout
 
         # TCP_TW_REUSE
         # This allows reusing sockets in TIME_WAIT state for new connections when it is safe from protocol viewpoint.
