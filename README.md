@@ -1,3 +1,10 @@
+## Please read before you submit any issue or PR ##
+
+DEA & HM9000 will only be updated in response to vulnerability discoveries and major bugs. No new features will be introduced during this period.
+
+See [EOL Timeline for Legacy DEA Backend](https://lists.cloudfoundry.org/archives/list/cf-dev@lists.cloudfoundry.org/message/GMXXJTTM2Q
+
+
 # HM Workspace
 
 A Go workspace for specifiying dependencies for [HM9000](http://github.com/cloudfoundry/hm9000).
