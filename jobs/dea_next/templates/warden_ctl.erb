@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -e 
 
 RUN_DIR=/var/vcap/sys/run/warden
 LOG_DIR=/var/vcap/sys/log/warden
@@ -45,8 +45,11 @@ case $1 in
     # The kernel has a bug where network interfaces cannot be removed when a
     # network namespace is destroyed (NEW_NETNS) due to dangling references.
     # It is not triggered when IPv6 is disabled.
-    sysctl -w net.ipv6.conf.all.disable_ipv6=1
-    sysctl -w net.ipv6.conf.default.disable_ipv6=1
+    if sysctl net.ipv6 >> /dev/null 2>&1;
+    then
+      sysctl -w net.ipv6.conf.all.disable_ipv6=1
+      sysctl -w net.ipv6.conf.default.disable_ipv6=1
+    fi
 
     cd /var/vcap/packages/warden/warden
 
